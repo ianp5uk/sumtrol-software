@@ -1,0 +1,6 @@
+<!-- Blighter Restrictor application icon: a shield with a check mark. -->
+<!-- Copyright (C) 2026 Ian Packer.  SPDX-License-Identifier: GPL-3.0-or-later (see LICENSE). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <path d="M32 4 L56 13 V30 C56 45 46 55 32 60 C18 55 8 45 8 30 V13 Z" fill="#2f6f9f" stroke="#1d4a6b" stroke-width="2"/>
+  <path d="M21 32 L29 40 L44 24" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

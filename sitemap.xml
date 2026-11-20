@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap.xml - list of every page for search engines. Add a line when you add a page. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://software.sumtrol.uk/</loc></url>
+  <url><loc>https://software.sumtrol.uk/blighter-restrictor/</loc></url>
+  <url><loc>https://software.sumtrol.uk/blighter-restrictor/technical/</loc></url>
+  <url><loc>https://software.sumtrol.uk/xtweetdelete/</loc></url>
+  <url><loc>https://software.sumtrol.uk/xtweetdelete/technical/</loc></url>
+  <url><loc>https://software.sumtrol.uk/ballisto/</loc></url>
+  <url><loc>https://software.sumtrol.uk/ballisto/technical/</loc></url>
+  <url><loc>https://software.sumtrol.uk/about/</loc></url>
+</urlset>

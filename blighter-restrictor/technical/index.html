@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+  blighter-restrictor/technical/index.html - Blighter Restrictor technical page: detail for technically confident readers.
+  Plain HTML: edit the words directly between the tags. The header and footer
+  are repeated on every page, so a change there needs making on each page.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blighter Restrictor: technical information</title>
+<meta name="description" content="How Blighter Restrictor works: Squid domain filtering, SSH management, release files and command-line installation.">
+<link rel="canonical" href="https://software.sumtrol.uk/blighter-restrictor/technical/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1f23" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Blighter Restrictor: technical information">
+<meta property="og:description" content="How Blighter Restrictor works: Squid domain filtering, SSH management, release files and command-line installation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://software.sumtrol.uk/blighter-restrictor/technical/">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script src="../../assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../">Sumtrol Software</a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main">
+        <a href="../../">Apps</a>
+        <a href="../../about/">About</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        <button type="button" data-theme="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../">Apps</a> / Blighter Restrictor: technical information</p>
+<div class="app-hero"><img class="app-icon" src="../../assets/img/blighter-icon.svg" alt="" width="80" height="80">
+<div><h1>Blighter Restrictor: technical information</h1><p class="meta">Version 1.2.5 · for technically confident readers</p></div></div>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#how">How it works</a></li><li><a href="#files">Release files</a></li><li><a href="#cli">Command-line install</a></li><li><a href="#limits">Limitations</a></li><li><a href="#source">Source code</a></li></ol></nav>
+<div class="content">
+<!-- DRAFT: taken from the README; trim or expand as you like. -->
+<section id="how"><h2>How it works</h2>
+<p>The parent app connects to each child PC over SSH with a password, as a dedicated <code>blighter</code> account. On the child PC, Squid listens on <code>127.0.0.1:3128</code> and filters by domain name. A firewall limits the child's account to Squid, DNS and UDP 50000-65535 (Discord voice and video).</p>
+<ul>
+<li>HTTPS is not decrypted, so the log shows domains, not pages.</li>
+<li>Two modes: allow all and block some, or block all and allow some. Both lists are kept.</li>
+<li>On Windows the firewall applies to the whole PC, because Windows can't reliably filter outgoing traffic per account.</li>
+<li>Home-network (private range) traffic is not filtered when <em>Allow home network access</em> is on.</li>
+<li>Opera downloads are blocked by default, because Opera's built-in VPN can't be switched off.</li>
+</ul></section>
+<section id="files"><h2>Release files</h2>
+<div class="table-wrap"><table><thead><tr><th>File</th><th>For</th><th>Size</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/BlighterRestrictor-Setup-1.2.5.exe">BlighterRestrictor-Setup-1.2.5.exe</a></td><td>Parent, Windows</td><td>35 MB</td></tr>
+<tr><td><a href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/blighter-restrictor_1.2.5_all.deb">blighter-restrictor_1.2.5_all.deb</a></td><td>Parent, Linux</td><td>32 KB</td></tr>
+<tr><td><a href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/BlighterChild-Setup-1.2.5.exe">BlighterChild-Setup-1.2.5.exe</a></td><td>Child, Windows 10/11</td><td>13 MB</td></tr>
+<tr><td><a href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/blighter-child_1.2.5_all.deb">blighter-child_1.2.5_all.deb</a></td><td>Child, Ubuntu</td><td>21 KB</td></tr>
+</tbody></table></div>
+<p>The Windows installers are not code-signed yet.</p></section>
+<section id="cli"><h2>Command-line install (Linux)</h2>
+<pre><code>sudo apt install ./blighter-child_1.2.5_all.deb      # child PC
+sudo apt install ./blighter-restrictor_1.2.5_all.deb # parent PC</code></pre></section>
+<section id="limits"><h2>Limitations</h2>
+<ul>
+<li>Designed for a home network behind a router: password authentication only, no MFA.</li>
+<li>Tested on x86/x64 only; not tested on ARM or tablets.</li>
+<li>A child with administrator rights can undo the restrictions.</li>
+<li>Paid VPNs are not specially blocked.</li>
+</ul></section>
+<section id="source"><h2>Source code</h2>
+<p>Blighter Restrictor is open source under the GPL-3.0-or-later licence. <a href="https://github.com/ianp5uk/blighter-restrictor">Source code on GitHub</a>.</p></section>
+<p class="tech-link"><a href="../">Back to Blighter Restrictor</a></p>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Free software by Ian Packer.</span>
+    <span><a href="../../about/">About and contact</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# robots.txt - lets search engines read the whole site and points them at the sitemap.
+User-agent: *
+Allow: /
+Sitemap: https://software.sumtrol.uk/sitemap.xml

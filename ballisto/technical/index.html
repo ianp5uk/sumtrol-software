@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+  ballisto/technical/index.html - Ballisto technical page: detail for technically confident readers.
+  Plain HTML: edit the words directly between the tags. The header and footer
+  are repeated on every page, so a change there needs making on each page.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ballisto: technical information</title>
+<meta name="description" content="Ballisto technical details: solver, drag models, accuracy limits and adb installation.">
+<link rel="canonical" href="https://software.sumtrol.uk/ballisto/technical/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1f23" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Ballisto: technical information">
+<meta property="og:description" content="Ballisto technical details: solver, drag models, accuracy limits and adb installation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://software.sumtrol.uk/ballisto/technical/">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<script src="../../assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../">Sumtrol Software</a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main">
+        <a href="../../">Apps</a>
+        <a href="../../about/">About</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        <button type="button" data-theme="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../../">Apps</a> / Ballisto: technical information</p>
+<div class="app-hero"><img class="app-icon" src="../../assets/img/ballisto-icon.png" alt="" width="80" height="80">
+<div><h1>Ballisto: technical information</h1><p class="meta">Version 1.0.2 · for technically confident readers</p></div></div>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#how">How it works</a></li><li><a href="#accuracy">Accuracy</a></li><li><a href="#cli">Install with adb</a></li><li><a href="#source">Source code</a></li></ol></nav>
+<div class="content">
+<!-- DRAFT -->
+<section id="how"><h2>How it works</h2>
+<p>The interface and solver are plain HTML, CSS and JavaScript inside a small Kotlin wrapper. The app requests no Android permissions (no internet, sensors or storage) and uses no third-party code beyond the Android framework and the Kotlin standard library.</p>
+<p>Supported drag models: G1, G2, G5, G6, G7, G8, GI, GL and RA4. Defaults: BC 0.112, RA4.</p></section>
+<section id="accuracy"><h2>Accuracy</h2>
+<p>Designed for 10 to 100 m smallbore. It solves to 3,000 m, with falling accuracy beyond about 500 m. The algorithms and the source of every drag table are documented in <code>ALGORITHMS.md</code> in the source code.</p></section>
+<section id="cli"><h2>Install with adb</h2>
+<pre><code>adb install Ballisto-1.0.2.apk</code></pre>
+<p>Updates install over earlier versions and keep your saved ammunition and rifles.</p></section>
+<section id="source"><h2>Source code</h2><p><a href="https://github.com/ianp5uk/Ballisto">Source code on GitHub</a>.</p></section>
+<p class="tech-link"><a href="../">Back to Ballisto</a></p>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Free software by Ian Packer.</span>
+    <span><a href="../../about/">About and contact</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+  blighter-restrictor/index.html - Blighter Restrictor app page, written for non-technical parents.
+  Plain HTML: edit the words directly between the tags. The header and footer
+  are repeated on every page, so a change there needs making on each page.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blighter Restrictor: control which websites your child can visit</title>
+<meta name="description" content="Blighter Restrictor lets parents choose which websites a child's Windows or Linux computer can visit, and see the sites visited. Free.">
+<link rel="canonical" href="https://software.sumtrol.uk/blighter-restrictor/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1f23" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Blighter Restrictor: control which websites your child can visit">
+<meta property="og:description" content="Blighter Restrictor lets parents choose which websites a child's Windows or Linux computer can visit, and see the sites visited. Free.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://software.sumtrol.uk/blighter-restrictor/">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">Sumtrol Software</a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main">
+        <a href="../">Apps</a>
+        <a href="../about/">About</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        <button type="button" data-theme="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../">Apps</a> / Blighter Restrictor</p>
+<div class="app-hero"><img class="app-icon" src="../assets/img/blighter-icon.svg" alt="" width="80" height="80">
+<div><h1>Blighter Restrictor <span class="badge">Pre-release</span></h1><p class="meta">Version 1.2.5 · Windows and Linux</p></div></div>
+<div class="notice" role="note"><strong>Pre-release: testing in progress.</strong> Blighter works well in my own home, and is now being tried by other families. Expect rough edges, and please tell me about anything that confuses you.</div>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#for-me">Is this for me?</a></li><li><a href="#need">What you need</a></li><li><a href="#download">Download</a></li><li><a href="#install">Install</a></li><li><a href="#use">Everyday use</a></li><li><a href="#help">Problems and help</a></li></ol></nav>
+<div class="content">
+<!-- DRAFT: all wording below is a starting point taken from the README. Replace freely. -->
+<section id="for-me">
+<h2>Is this for me?</h2>
+<p class="lead">Blighter lets you decide which websites your child's computer can reach, and shows you which sites they have visited.</p>
+<p>You run the parent app on your own computer. It connects to your child's computer over your home network to change the rules and read the activity log. You can:</p>
+<ul>
+<li>Allow everything and block a few sites, or block everything and allow a few.</li>
+<li>Pause the restrictions when you need to.</li>
+<li>See which websites were visited (the site name, not individual pages).</li>
+</ul>
+<p>The rules keep working when the child's computer is away from home. Changing them and viewing the log only works at home.</p>
+<figure class="shot"><img src="../assets/img/blighter-screen.webp" alt="The Blighter Restrictor parent app showing the rules for a child's computer" width="1400" height="737" loading="lazy"><figcaption>The parent app, where you set the rules for each child.</figcaption></figure>
+</section>
+
+<section id="need">
+<h2>What you need</h2>
+<div class="panel"><ul>
+<li><strong>Your computer:</strong> Windows or Linux.</li>
+<li><strong>Your child's computer:</strong> Windows 10 or 11, or Ubuntu Linux, with an Intel or AMD processor.</li>
+<li><strong>Both on your home network</strong>, for example connected to the same router.</li>
+<li><strong>The administrator password</strong> for your child's computer.</li>
+<li><strong>About an hour</strong> for the first setup.</li>
+</ul></div>
+<p>Your child's computer also needs a fixed address on your home network, so the parent app can always find it. The install steps explain how.</p>
+<details><summary>Will my child be able to get round it?</summary>
+<p>If your child's account is an administrator account, a determined and technically confident child could undo the restrictions. For the best protection, give your child a standard (non-administrator) account.</p></details>
+</section>
+
+<section id="download">
+<h2>Download</h2>
+<p>You need two parts: the parent app for your computer, and the child part for each child's computer.</p>
+<div class="dl-group"><h3>For your computer (parent app)</h3>
+<div class="downloads">
+<a class="dl" data-os="windows" href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/BlighterRestrictor-Setup-1.2.5.exe"><span class="os">Windows</span><span class="file">BlighterRestrictor-Setup-1.2.5.exe · 35 MB</span><span class="rec">Recommended for this device</span></a>
+<a class="dl" data-os="linux" href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/blighter-restrictor_1.2.5_all.deb"><span class="os">Linux (Ubuntu, Debian)</span><span class="file">blighter-restrictor_1.2.5_all.deb · 32 KB</span><span class="rec">Recommended for this device</span></a>
+</div></div>
+<div class="dl-group"><h3>For your child's computer</h3>
+<div class="downloads">
+<a class="dl" data-os="windows" href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/BlighterChild-Setup-1.2.5.exe"><span class="os">Windows 10 or 11</span><span class="file">BlighterChild-Setup-1.2.5.exe · 13 MB</span><span class="rec">Recommended for this device</span></a>
+<a class="dl" data-os="linux" href="https://github.com/ianp5uk/blighter-restrictor/releases/download/V1.2.5/blighter-child_1.2.5_all.deb"><span class="os">Ubuntu Linux</span><span class="file">blighter-child_1.2.5_all.deb · 21 KB</span><span class="rec">Recommended for this device</span></a>
+</div></div>
+</section>
+
+<section id="install">
+<h2>Install</h2>
+<h3>On your child's computer</h3>
+<ol class="steps">
+<li>Sign in to your child's computer with the administrator account.</li>
+<li>Download the child installer above and open it.
+<span class="expect">On Windows you'll see a blue "Windows protected your PC" message, because the installer isn't signed yet. Click <strong>More info</strong>, then <strong>Run anyway</strong>.</span></li>
+<li>Follow the installer, and choose a password when it asks. Write it down: you'll need it in the parent app.</li>
+<li>Give the computer a fixed address on your home network. <!-- DRAFT: plain-language guide or link to a help page --></li>
+</ol>
+<h3>On your computer</h3>
+<ol class="steps">
+<li>Download the parent app above and open it.</li>
+<li>Open <strong>Blighter Restrictor</strong> and add your child's computer, using the address and password from the steps above.
+<span class="expect">You should now see your child's computer listed, with its rules and activity.</span></li>
+</ol>
+</section>
+
+<section id="use">
+<h2>Everyday use</h2>
+<!-- DRAFT -->
+<p>Open the parent app to add or remove websites, pause the restrictions, or look at the activity log.</p>
+<p>When a site is blocked, your child sees a plain "This site isn't available" page, or the browser's own error message on secure sites.</p>
+</section>
+
+<section id="help">
+<h2>Problems and help</h2>
+<details><summary>The parent app can't find my child's computer</summary><p>Check both computers are on the home network, and that the child's computer still has the fixed address you gave it. <!-- DRAFT --></p></details>
+<details><summary>A website we need is blocked</summary><p>Add it to the allow list in the parent app. <!-- DRAFT --></p></details>
+<p>Still stuck, or something confusing? <a href="https://github.com/ianp5uk/blighter-restrictor/issues">Report a problem or send feedback</a>.</p>
+<p>Blighter is free. If it helps your family, <a href="https://ko-fi.com/ianp5">donations on Ko-fi</a> help pay for fixes and new features.</p>
+</section>
+<p class="tech-link">Want the detail? <a href="technical/">Technical information</a>: how it works, command-line install and limitations.</p>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Free software by Ian Packer.</span>
+    <span><a href="../about/">About and contact</a></span>
+  </div>
+</footer>
+</body>
+</html>

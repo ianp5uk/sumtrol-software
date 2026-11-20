@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+  ballisto/index.html - Ballisto app page, written for non-technical users.
+  Plain HTML: edit the words directly between the tags. The header and footer
+  are repeated on every page, so a change there needs making on each page.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ballisto: ballistic calculator for target shooting (Android)</title>
+<meta name="description" content="Ballisto is a free, offline Android ballistic calculator for smallbore target shooting: sight clicks for range and wind.">
+<link rel="canonical" href="https://software.sumtrol.uk/ballisto/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1f23" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Ballisto: ballistic calculator for target shooting (Android)">
+<meta property="og:description" content="Ballisto is a free, offline Android ballistic calculator for smallbore target shooting: sight clicks for range and wind.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://software.sumtrol.uk/ballisto/">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">Sumtrol Software</a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main">
+        <a href="../">Apps</a>
+        <a href="../about/">About</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        <button type="button" data-theme="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../">Apps</a> / Ballisto</p>
+<div class="app-hero"><img class="app-icon" src="../assets/img/ballisto-icon.png" alt="" width="80" height="80">
+<div><h1>Ballisto</h1><p class="meta">Version 1.0.2 · Android 10 and later</p></div></div>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#for-me">Is this for me?</a></li><li><a href="#need">What you need</a></li><li><a href="#download">Download</a></li><li><a href="#install">Install</a></li><li><a href="#use">Using it</a></li><li><a href="#help">Problems and help</a></li></ol></nav>
+<div class="content">
+<!-- DRAFT: all wording below is a starting point taken from the README. Replace freely. -->
+<section id="for-me"><h2>Is this for me?</h2>
+<p class="lead">Ballisto tells you how many clicks to move your sight when you shoot at a different distance from the one your rifle is zeroed at.</p>
+<p>It also estimates the wind correction, either from where your last shot landed or from the crosswind speed. It's designed for 10 to 100 metre smallbore target shooting.</p>
+<ul><li>Works completely offline. It asks for no permissions at all, so it can't connect to the internet.</li>
+<li>Free, with no adverts and no tracking.</li></ul>
+<figure class="shot phone"><img src="../assets/img/ballisto-screen.webp" alt="Ballisto showing a sight correction on an Android phone" width="540" height="1200" loading="lazy"><figcaption>Ballisto on an Android phone.</figcaption></figure>
+</section>
+<section id="need"><h2>What you need</h2>
+<div class="panel"><ul><li>An Android phone running Android 10 or later.</li>
+<li>Your ammunition details: bullet weight and muzzle velocity, from the box or the maker's website.</li>
+<li>Your sight's click value, for example 0.1 MRAD.</li></ul></div></section>
+<section id="download"><h2>Download</h2>
+<div class="downloads"><a class="dl" data-os="android" href="https://github.com/ianp5uk/Ballisto/raw/main/Ballisto-1.0.2.apk"><span class="os">Android</span><span class="file">Ballisto-1.0.2.apk · 62 KB</span><span class="rec">Recommended for this device</span></a></div>
+<p>Download this on your phone. If you're on a computer, open this page on your phone instead.</p></section>
+<section id="install"><h2>Install</h2>
+<ol class="steps">
+<li>Tap the download button above on your phone.</li>
+<li>Open the downloaded file.
+<span class="expect">Android will say it can't install apps from this source. Tap <strong>Settings</strong>, turn on <strong>Allow from this source</strong>, then go back.</span></li>
+<li>Tap <strong>Install</strong>.
+<span class="expect">You may see a Play Protect message about an unrecognised app. Tap <strong>More details</strong>, then <strong>Install anyway</strong>.</span></li>
+</ol></section>
+<section id="use"><h2>Using it</h2>
+<ol class="steps">
+<li><strong>Ammo:</strong> enter the name, bullet weight and muzzle velocity. Grey text shows a default or an example.</li>
+<li><strong>Rifle:</strong> enter the rifle's name, click value and zero distance.</li>
+<li><strong>Compute:</strong> enter the new distance to see how many clicks to move.</li>
+</ol></section>
+<section id="help"><h2>Problems and help</h2>
+<p><a href="https://github.com/ianp5uk/Ballisto/issues">Report a problem or send feedback</a>.</p></section>
+<p class="tech-link">Want the detail? <a href="technical/">Technical information</a>: algorithms, drag models and accuracy.</p>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Free software by Ian Packer.</span>
+    <span><a href="../about/">About and contact</a></span>
+  </div>
+</footer>
+</body>
+</html>

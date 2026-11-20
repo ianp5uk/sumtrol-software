@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+  xtweetdelete/index.html - XTweetDelete app page, written for non-technical users.
+  Plain HTML: edit the words directly between the tags. The header and footer
+  are repeated on every page, so a change there needs making on each page.
+-->
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XTweetDelete: delete your X posts in bulk</title>
+<meta name="description" content="XTweetDelete deletes your posts, replies, likes and reposts on X in bulk. Free for Windows, Linux and Android.">
+<link rel="canonical" href="https://software.sumtrol.uk/xtweetdelete/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1c1f23" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="XTweetDelete: delete your X posts in bulk">
+<meta property="og:description" content="XTweetDelete deletes your posts, replies, likes and reposts on X in bulk. Free for Windows, Linux and Android.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://software.sumtrol.uk/xtweetdelete/">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">Sumtrol Software</a>
+    <div class="header-right">
+      <nav class="site-nav" aria-label="Main">
+        <a href="../">Apps</a>
+        <a href="../about/">About</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme="dark" aria-pressed="false">Dark</button>
+        <button type="button" data-theme="system" aria-pressed="true">System</button>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+<p class="crumbs"><a href="../">Apps</a> / XTweetDelete</p>
+<div class="app-hero"><img class="app-icon" src="../assets/img/xtweetdelete-icon.svg" alt="" width="80" height="80">
+<div><h1>XTweetDelete</h1><p class="meta">Version 1.0.4 · Windows, Linux and Android</p></div></div>
+<div class="layout">
+<nav class="toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#for-me">Is this for me?</a></li><li><a href="#need">What you need</a></li><li><a href="#download">Download</a></li><li><a href="#install">Install</a></li><li><a href="#help">Problems and help</a></li></ol></nav>
+<div class="content">
+<!-- DRAFT: all wording below is a starting point taken from the README. Replace freely. -->
+<section id="for-me"><h2>Is this for me?</h2>
+<p class="lead">XTweetDelete deletes your posts, replies, likes and reposts on X in bulk, so you don't have to remove them one at a time.</p>
+<p>A few dozen posts take seconds. Thousands take longer, because X limits how fast apps can work. For very large accounts, the app will ask you to download your X archive so it can find older posts.</p>
+<div class="notice" role="note"><strong>Deleting is permanent.</strong> Once you start, the app keeps going in the background even if you close the browser window.</div>
+<figure class="shot phone"><img src="../assets/img/xtweetdelete-screen.webp" alt="The XTweetDelete app" width="800" height="1226" loading="lazy"><figcaption>XTweetDelete runs in your web browser.</figcaption></figure>
+</section>
+<section id="need"><h2>What you need</h2>
+<div class="panel"><ul>
+<li><strong>An X account</strong> with the posts you want to delete.</li>
+<li><strong>A free X developer account</strong>, to get a "client ID" the app uses to sign in. This is the fiddliest part; the steps below walk you through it.</li>
+<li><strong>A little prepaid X credit.</strong> X charges for automated access, about $0.005 per deletion at the time of writing. The app stops if your credit runs out.</li>
+<li>A Windows or Linux computer, or an Android phone.</li>
+</ul></div></section>
+<section id="download"><h2>Download</h2>
+<div class="downloads">
+<a class="dl" data-os="windows" href="https://github.com/ianp5uk/XTweetDelete/releases/download/TweetDelete_Windows_V1.0.4.3/TweetDelete-Setup_v1.0.4.3.exe"><span class="os">Windows</span><span class="file">TweetDelete-Setup_v1.0.4.3.exe · 13 MB</span><span class="rec">Recommended for this device</span></a>
+<a class="dl" data-os="linux" href="https://github.com/ianp5uk/XTweetDelete/releases/download/TweetDelete_Linux_V1.0.4.3/tweetdelete_1.0.4.3_all.deb"><span class="os">Linux (Ubuntu, Debian)</span><span class="file">tweetdelete_1.0.4.3_all.deb · 140 KB</span><span class="rec">Recommended for this device</span></a>
+<a class="dl" data-os="android" href="https://github.com/ianp5uk/XTweetDelete/releases/download/TweetDelete_Android/app-release_v1.04.apk"><span class="os">Android</span><span class="file">app-release_v1.04.apk · 5.6 MB</span><span class="rec">Recommended for this device</span></a>
+</div></section>
+<section id="install"><h2>Install</h2>
+<ol class="steps">
+<li>Create your free X developer account and copy your client ID. <!-- DRAFT: step-by-step guide with screenshots --></li>
+<li>Download and open the installer for your device.
+<span class="expect">On Windows you'll see "Windows protected your PC". Click <strong>More info</strong>, then <strong>Run anyway</strong>. On Android, allow your browser or file manager to install unknown apps when asked.</span></li>
+<li>Open <strong>TweetDelete</strong> and paste your client ID when it asks.
+<span class="expect">You normally only need to do this once.</span></li>
+</ol></section>
+<section id="help"><h2>Problems and help</h2>
+<details><summary>It stopped before deleting everything</summary><p>X only lets apps see your most recent posts (about 3,200 at the time of writing). Download your X archive and give it to the app to find the rest. <!-- DRAFT --></p></details>
+<details><summary>Old likes won't delete</summary><p>Very old likes usually need the archive download too.</p></details>
+<p><a href="https://github.com/ianp5uk/XTweetDelete/issues">Report a problem or send feedback</a>.</p>
+</section>
+<p class="tech-link">Want the detail? <a href="technical/">Technical information</a>: how it works, command-line install and limitations.</p>
+</div></div></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Free software by Ian Packer.</span>
+    <span><a href="../about/">About and contact</a></span>
+  </div>
+</footer>
+</body>
+</html>
