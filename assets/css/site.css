@@ -127,7 +127,8 @@ pre code { background: none; padding: 0; }
 .app-icon { width: 56px; height: 56px; border-radius: 12px; flex-shrink: 0; }
 .app-card h2 { font-size: 1.2rem; margin: 0; }
 .app-card p { margin: 0; color: var(--muted); }
-.app-card .foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; padding-top: 0.25rem; }
+/* Platform chips always sit above the button, so every card lines up the same way at any width */
+.app-card .foot { margin-top: auto; display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem; padding-top: 0.25rem; }
 .app-card.soon { border-style: dashed; background: transparent; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 0.35rem; list-style: none; padding: 0; margin: 0; }
