@@ -28,8 +28,16 @@
     <a class="brand" href="../">Sumtrol Software</a>
     <div class="header-right">
       <nav class="site-nav" aria-label="Main">
-        <a href="../">Apps</a>
-        <a href="../about/" aria-current="page">About</a>
+        <div class="menu">
+          <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="apps-menu">Apps <span aria-hidden="true">▾</span></button>
+          <ul class="menu-list" id="apps-menu" hidden>
+            <li><a href="../blighter-restrictor/">Blighter Restrictor</a></li>
+            <li><a href="../xtweetdelete/">XTweetDelete</a></li>
+            <li><a href="../ballisto/">Ballisto</a></li>
+            <li class="menu-all"><a href="../">All apps</a></li>
+          </ul>
+        </div>
+        <a href="../about/" data-about aria-current="page">About</a>
       </nav>
       <div class="theme-switch" role="group" aria-label="Colour theme">
         <button type="button" data-theme="light" aria-pressed="false">Light</button>
@@ -42,6 +50,8 @@
 <main id="main">
 <div class="wrap narrow">
 <p class="crumbs"><a href="../">Apps</a> / About</p>
+<!-- Everything inside data-about-content is also shown in the About pop-up on every page. -->
+<div data-about-content>
 <h1>About</h1>
 <!-- DRAFT: replace with your own words -->
 <p class="lead">I'm Ian Packer. I write software to solve problems I have at home, then share it in case it helps someone else.</p>
@@ -50,11 +60,12 @@
 <p>The quickest way to report a problem or suggest an improvement is the feedback link on each app's page.</p>
 <!-- DRAFT: add an email address or contact form link here if you want one -->
 </div>
+</div>
 </main>
 <footer class="site-footer">
   <div class="wrap">
     <span>Free software by Ian Packer.</span>
-    <span><a href="../about/">About and contact</a></span>
+    <span><a href="../about/" data-about>About and contact</a></span>
   </div>
 </footer>
 </body>

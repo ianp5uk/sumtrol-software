@@ -107,6 +107,41 @@ pre code { background: none; padding: 0; }
 .site-nav a:first-child { margin-left: 0; }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--text); }
 
+/* Apps drop-down menu */
+.site-nav { display: flex; align-items: center; }
+.menu { position: relative; }
+.menu-toggle {
+  font: inherit; font-size: 0.95rem; background: none; border: 0; color: var(--muted); cursor: pointer;
+  padding: 0.35rem 0.25rem; min-height: 36px;
+}
+.menu-toggle:hover, .menu-toggle[aria-expanded="true"] { color: var(--text); }
+.menu-list {
+  position: absolute; top: calc(100% + 6px); left: 0; z-index: 20; min-width: 220px; max-width: calc(100vw - 2rem);
+  list-style: none; margin: 0; padding: 0.35rem; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 10px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+.menu-list[hidden] { display: none; }
+.menu-list li { margin: 0; }
+.site-nav .menu-list a { display: block; margin: 0; padding: 0.55rem 0.75rem; border-radius: 6px; color: var(--text); font-size: 0.95rem; }
+.site-nav .menu-list a:hover, .site-nav .menu-list a:focus-visible { background: var(--surface-2); }
+.site-nav .menu-list a[aria-current="page"] { font-weight: 700; }
+.menu-all { border-top: 1px solid var(--line); margin-top: 0.3rem !important; padding-top: 0.3rem; }
+.site-nav .menu-all a { color: var(--accent); }
+
+/* About pop-up */
+.about-dialog {
+  width: min(560px, calc(100vw - 2rem)); max-height: calc(100dvh - 2rem); overflow: auto;
+  background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 14px; padding: 1.5rem 1.5rem 1.25rem;
+}
+.about-dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+.about-dialog h1 { font-size: 1.6rem; padding-right: 2rem; }
+.about-dialog .dialog-body > :last-child { margin-bottom: 0; }
+.dialog-close {
+  position: absolute; top: 0.6rem; right: 0.6rem; width: 40px; height: 40px; border-radius: 50%;
+  font-size: 1.5rem; line-height: 1; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); cursor: pointer;
+}
+.dialog-close:hover { border-color: var(--accent); }
+
 /* Theme switch: three-way segmented control */
 .theme-switch { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; background: var(--surface-2); }
 .theme-switch button {

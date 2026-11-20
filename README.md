@@ -24,8 +24,13 @@ CNAME                           Tells GitHub Pages the custom domain
 .nojekyll                       Tells GitHub Pages to serve the files exactly as they are
 ```
 
-Draft wording is marked with `<!-- DRAFT -->` comments. The header and footer
-are repeated on every page; change them on each page.
+Draft wording is marked with `<!-- DRAFT -->` comments. The header (including
+the Apps menu list) and footer are repeated on every page; when adding an app,
+add it to the Apps menu on each page as well as a card on the home page.
+
+The About pop-up shows whatever is inside `data-about-content` on
+`about/index.html`, so About text is only written once. The pop-up needs the
+site to be served (see below); opening files directly falls back to the page.
 
 ## Preview while editing
 

@@ -28,8 +28,16 @@
     <a class="brand" href="../">Sumtrol Software</a>
     <div class="header-right">
       <nav class="site-nav" aria-label="Main">
-        <a href="../">Apps</a>
-        <a href="../about/">About</a>
+        <div class="menu">
+          <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="apps-menu">Apps <span aria-hidden="true">▾</span></button>
+          <ul class="menu-list" id="apps-menu" hidden>
+            <li><a href="../blighter-restrictor/">Blighter Restrictor</a></li>
+            <li><a href="../xtweetdelete/" aria-current="page">XTweetDelete</a></li>
+            <li><a href="../ballisto/">Ballisto</a></li>
+            <li class="menu-all"><a href="../">All apps</a></li>
+          </ul>
+        </div>
+        <a href="../about/" data-about>About</a>
       </nav>
       <div class="theme-switch" role="group" aria-label="Colour theme">
         <button type="button" data-theme="light" aria-pressed="false">Light</button>
@@ -86,7 +94,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>Free software by Ian Packer.</span>
-    <span><a href="../about/">About and contact</a></span>
+    <span><a href="../about/" data-about>About and contact</a></span>
   </div>
 </footer>
 </body>
