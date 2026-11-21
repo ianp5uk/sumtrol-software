@@ -188,7 +188,8 @@ pre code { background: none; padding: 0; }
 .app-hero .app-icon { width: 80px; height: 80px; border-radius: 18px; }
 .app-hero h1 { margin: 0; }
 .app-hero .meta { color: var(--muted); margin: 0.2rem 0 0; }
-.lead { font-size: 1.2rem; }
+.lead { font-size: 1rem; }
+.small { font-size: 0.85rem; }
 
 .notice { background: var(--warn-bg); color: var(--warn-text); border: 1px solid var(--warn-line); border-radius: 10px; padding: 0.9rem 1.1rem; margin: 1rem 0; }
 .notice strong { color: inherit; }
